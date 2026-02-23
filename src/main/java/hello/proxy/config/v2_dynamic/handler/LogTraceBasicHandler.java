@@ -15,9 +15,9 @@ public class LogTraceBasicHandler implements InvocationHandler {
     private final Object target;
     private final LogTrace logTrace;
 
-    public LogTraceBasicHandler(Object target, LogTrace trace) {
+    public LogTraceBasicHandler(Object target, LogTrace LogTrace) {
         this.target = target;
-        this.logTrace = logTrace;
+        this.logTrace = LogTrace;
     }
 
     @Override

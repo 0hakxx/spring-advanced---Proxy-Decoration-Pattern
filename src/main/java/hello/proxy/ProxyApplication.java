@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Import;
 //@Import({AppV1Config.class, AppV2Config.class})
 //@Import(InterfaceProxyConfig.class)
 //@Import(DynamicBasicConfig.class)
-@Import(DynamicFilterConfig.class)
+@Import({DynamicFilterConfig.class, DynamicBasicConfig.class})
 public class ProxyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProxyApplication.class, args);
