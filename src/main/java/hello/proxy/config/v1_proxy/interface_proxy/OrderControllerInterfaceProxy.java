@@ -1,6 +1,6 @@
 package hello.proxy.config.v1_proxy.interface_proxy;
 
-import hello.proxy.app.v1.OrderContollerV1;
+import hello.proxy.app.v1.OrderControllerV1;
 import hello.proxy.trace.TraceStatus;
 import hello.proxy.trace.logtrace.LogTrace;
 import lombok.RequiredArgsConstructor;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class OrderControllerInterfaceProxy implements OrderContollerV1 {
+public class OrderControllerInterfaceProxy implements OrderControllerV1 {
 
-    private final OrderContollerV1 target;
+    private final OrderControllerV1 target;
     private final LogTrace logTrace;
     @Override
     public String request(String itemId) {

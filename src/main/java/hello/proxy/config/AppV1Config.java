@@ -3,14 +3,13 @@ package hello.proxy.config;
 import hello.proxy.app.v1.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
 
 @Configuration
 public class AppV1Config {
     @Bean
-    public OrderContollerV1 orderContollerV1() {
-        return new OrderContollerV1Impl(orderServiceV1());
+    public OrderControllerV1 orderContollerV1() {
+        return new OrderControllerV1Impl(orderServiceV1());
     }
 
     @Bean

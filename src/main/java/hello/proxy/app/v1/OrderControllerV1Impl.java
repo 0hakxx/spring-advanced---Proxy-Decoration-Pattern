@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
-public class OrderContollerV1Impl implements OrderContollerV1 {
+public class OrderControllerV1Impl implements OrderControllerV1 {
 
     private final OrderServiceV1 orderService;
 
-    public OrderContollerV1Impl(OrderServiceV1 orderService) {
+    public OrderControllerV1Impl(OrderServiceV1 orderService) {
         this.orderService = orderService;
     }
     @Override public String request(String itemId) {
