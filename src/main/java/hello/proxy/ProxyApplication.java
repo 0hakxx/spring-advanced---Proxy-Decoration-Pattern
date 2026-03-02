@@ -9,6 +9,7 @@ import hello.proxy.config.v2_dynamic.DynamicFilterConfig;
 import hello.proxy.config.v3_proxyfactory.ProxyFactoryConfigV1;
 import hello.proxy.config.v4_postprocessor.BeanProcessorConfig;
 import hello.proxy.config.v5_autoproxy.AutoProxyConfig;
+import hello.proxy.config.v6_aop.AopConfig;
 import hello.proxy.trace.logtrace.LogTrace;
 import hello.proxy.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +25,8 @@ import org.springframework.context.annotation.Import;
 //@Import(DynamicFilterConfig.class)
 //@Import(ProxyFactoryConfigV1.class)
 //@Import(BeanProcessorConfig.class)
-@Import(AutoProxyConfig.class)
+//@Import(AutoProxyConfig.class)
+@Import(AopConfig.class)
 public class ProxyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProxyApplication.class, args);
